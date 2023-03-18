@@ -9,7 +9,8 @@ const Home = () => {
   
   const [detail,setDetail] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/')
+    // fetch('http://localhost:5000/')
+    fetch('https://blog-backend-65w2.onrender.com/')
     .then(res=>res.json())
     .then(data=>setDetail(data))
   },[])

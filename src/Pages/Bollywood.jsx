@@ -7,7 +7,8 @@ const Bollywood = () => {
   
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/bollywood')
+    // fetch('http://localhost:5000/bollywood')
+    fetch('https://blog-backend-65w2.onrender.com/bollywood')
     .then(res=>res.json())
     .then(data=>setData(data))
   },[])

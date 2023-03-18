@@ -7,7 +7,8 @@ const Hollywood = () => {
   
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/hollywood')
+    // fetch('http://localhost:5000/hollywood')
+    fetch('https://blog-backend-65w2.onrender.com/hollywood')
     .then(res=>res.json())
     .then(data=>setData(data))
   },[])

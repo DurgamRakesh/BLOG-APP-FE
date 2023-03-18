@@ -7,7 +7,8 @@ const Fitness = () => {
   
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/fitness')
+    // fetch('http://localhost:5000/fitness')
+    fetch('https://blog-backend-65w2.onrender.com/fitness')
     .then(res=>res.json())
     .then(data=>setData(data))
   },[])
